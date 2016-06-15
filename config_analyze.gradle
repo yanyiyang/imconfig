@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='GitLab Community Edition' name='description'>
+<title>config_analyze.gradle | master | IM-Component / im-appfac-config-gradle | GitLab</title>
+<link href="/assets/favicon-5738a6efe01f3282080df5f467da72a9.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link href="/assets/application-ffeeed35892b38ff9bfa135564fb0830.css" media="all" rel="stylesheet" />
+<link href="/assets/print-47fe51cdf70398e5e54b544e0f5cc718.css" media="print" rel="stylesheet" />
+<script src="/assets/application-3302fd299e1a3e701974f594a4a76c56.js"></script>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="Jc3gEWidAFAecdG/QrqCJ8B+w1I6Bdy5z+wpzNDO9WA=" name="csrf-token" />
+<script type="text/javascript">
+//<![CDATA[
+window.gon={};gon.default_issues_tracker="gitlab";gon.api_version="v3";gon.relative_url_root="";gon.default_avatar_url="http://git.sdp.nd/assets/no_avatar-0b64d25ac5f63e6f0caee99e819105ba.png";gon.max_file_size=10;gon.current_user_id=179;gon.api_token="k9F8yJsAfNByXMKW-iGi";
+//]]>
+</script>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+<meta content='#474D57' name='theme-color'>
+<link href="/assets/touch-icon-iphone-4c0496ac9f88e7961644c66b289a6614.png" rel="apple-touch-icon" type="image/vnd.microsoft.icon" />
+<link href="/assets/touch-icon-ipad-d64abe7a8e8be6e02245d2ed79da6ff9.png" rel="apple-touch-icon" sizes="76x76" type="image/vnd.microsoft.icon" />
+<link href="/assets/touch-icon-iphone-retina-54af16810ab006406b4df81f8a92fe8d.png" rel="apple-touch-icon" sizes="120x120" type="image/vnd.microsoft.icon" />
+<link href="/assets/touch-icon-ipad-retina-72774a950890a9e3811ab91f186cc11f.png" rel="apple-touch-icon" sizes="152x152" type="image/vnd.microsoft.icon" />
+<meta content='http://git.sdp.nd/assets/msapplication-tile-fc54d4a5d37bcda7967a2b70dedf3327.png' name='msapplication-TileImage'>
+<meta content='#30353E' name='msapplication-TileColor'>
+
+
+
+
+</head>
+
+<body class='ui_charcoal' data-page='projects:blob:show'>
+<script>
+  window.project_uploads_path = "/im-component/im-appfac-config-gradle/uploads";
+  window.markdown_preview_path = "/im-component/im-appfac-config-gradle/markdown_preview";
+</script>
+
+<header class='header-expanded navbar navbar-fixed-top navbar-gitlab'>
+<div class='container'>
+<div class='header-logo'>
+<a class="home" data-placement="bottom" data-toggle="tooltip" href="/" id="js-shortcuts-home" title="Dashboard"><img alt="Logo" src="/assets/logo-ca207549507c811d027110077cf86e90.svg" />
+<div class='gitlab-text-container'>
+<h3>GitLab</h3>
+</div>
+</a></div>
+<div class='header-content'>
+<button class='navbar-toggle' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<i class="fa fa-bars"></i>
+</button>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav pull-right'>
+<li class='hidden-sm hidden-xs'>
+<div class='search'>
+<form accept-charset="UTF-8" action="/search" class="navbar-form pull-left" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<input class="search-input form-control" id="search" name="search" placeholder="Search in this project" type="search" />
+<input id="group_id" name="group_id" type="hidden" />
+<input id="project_id" name="project_id" type="hidden" value="2486" />
+<input id="search_code" name="search_code" type="hidden" value="true" />
+<input id="repository_ref" name="repository_ref" type="hidden" value="master" />
+
+<div class='search-autocomplete-opts hide' data-autocomplete-path='/search/autocomplete' data-autocomplete-project-id='2486' data-autocomplete-project-ref='master'></div>
+</form>
+
+</div>
+<script>
+  $('.search-input').on('keyup', function(e) {
+    if (e.keyCode == 27) {
+      $('.search-input').blur()
+    }
+  })
+</script>
+
+</li>
+<li class='visible-sm visible-xs'>
+<a data-placement="bottom" data-toggle="tooltip" href="/search" title="Search"><i class="fa fa-search"></i>
+</a></li>
+<li class='hidden-xs'>
+<a data-placement="bottom" data-toggle="tooltip" href="/help" title="Help"><i class="fa fa-question-circle fa-fw"></i>
+</a></li>
+<li>
+<a data-placement="bottom" data-toggle="tooltip" href="/explore" title="Explore"><i class="fa fa-globe fa-fw"></i>
+</a></li>
+<li>
+<a data-placement="bottom" data-toggle="tooltip" href="/s/200904" title="Your snippets"><i class="fa fa-clipboard fa-fw"></i>
+</a></li>
+<li class='hidden-xs'>
+<a data-placement="bottom" data-toggle="tooltip" href="/projects/new" title="New project"><i class="fa fa-plus fa-fw"></i>
+</a></li>
+<li>
+<a data-placement="bottom" data-toggle="tooltip" href="/profile" title="Profile settings"><i class="fa fa-cog fa-fw"></i>
+</a></li>
+<li>
+<a class="logout" data-method="delete" data-placement="bottom" data-toggle="tooltip" href="/users/sign_out" rel="nofollow" title="Sign out"><i class="fa fa-sign-out"></i>
+</a></li>
+</ul>
+</div>
+<h1 class='title'><span><a href="/groups/im-component">IM-Component</a> / <a href="/im-component/im-appfac-config-gradle">im-appfac-config-gradle</a></span></h1>
+</div>
+</div>
+</header>
+
+
+<div class='page-sidebar-expanded page-with-sidebar'>
+
+<div class='sidebar-wrapper nicescroll'>
+<ul class='nav nav-sidebar'>
+<li class=""><a class="back-link" data-placement="right" href="/groups/im-component" title="Back to group"><i class="fa fa-caret-square-o-left fa-fw"></i>
+<span>
+Back to Group
+</span>
+</a></li><li class='separate-item'></li>
+<li class="home"><a class="shortcuts-project" data-placement="right" href="/im-component/im-appfac-config-gradle" title="Project"><i class="fa fa-home fa-fw"></i>
+<span>
+Project
+</span>
+</a></li><li class=""><a class="shortcuts-project-activity" data-placement="right" href="/im-component/im-appfac-config-gradle/activity" title="Project Activity"><i class="fa fa-dashboard fa-fw"></i>
+<span>
+Activity
+</span>
+</a></li><li class="active"><a class="shortcuts-tree" data-placement="right" href="/im-component/im-appfac-config-gradle/tree/master" title="Files"><i class="fa fa-files-o fa-fw"></i>
+<span>
+Files
+</span>
+</a></li><li class=""><a class="shortcuts-commits" data-placement="right" href="/im-component/im-appfac-config-gradle/commits/master" title="Commits"><i class="fa fa-history fa-fw"></i>
+<span>
+Commits
+</span>
+</a></li><li class=""><a class="shortcuts-network" data-placement="right" href="/im-component/im-appfac-config-gradle/network/master" title="Network"><i class="fa fa-code-fork fa-fw"></i>
+<span>
+Network
+</span>
+</a></li><li class=""><a class="shortcuts-graphs" data-placement="right" href="/im-component/im-appfac-config-gradle/graphs/master" title="Graphs"><i class="fa fa-area-chart fa-fw"></i>
+<span>
+Graphs
+</span>
+</a></li><li class=""><a data-placement="right" href="/im-component/im-appfac-config-gradle/milestones" title="Milestones"><i class="fa fa-clock-o fa-fw"></i>
+<span>
+Milestones
+</span>
+</a></li><li class=""><a class="shortcuts-issues" data-placement="right" href="/im-component/im-appfac-config-gradle/issues" title="Issues"><i class="fa fa-exclamation-circle fa-fw"></i>
+<span>
+Issues
+<span class='count issue_counter'>0</span>
+</span>
+</a></li><li class=""><a class="shortcuts-merge_requests" data-placement="right" href="/im-component/im-appfac-config-gradle/merge_requests" title="Merge Requests"><i class="fa fa-tasks fa-fw"></i>
+<span>
+Merge Requests
+<span class='count merge_counter'>0</span>
+</span>
+</a></li><li class=""><a class="team-tab tab" data-placement="right" href="/im-component/im-appfac-config-gradle/project_members" title="Members"><i class="fa fa-users fa-fw"></i>
+<span>
+Members
+</span>
+</a></li><li class=""><a data-placement="right" href="/im-component/im-appfac-config-gradle/labels" title="Labels"><i class="fa fa-tags fa-fw"></i>
+<span>
+Labels
+</span>
+</a></li><li class=""><a class="shortcuts-wiki" data-placement="right" href="/im-component/im-appfac-config-gradle/wikis/home" title="Wiki"><i class="fa fa-book fa-fw"></i>
+<span>
+Wiki
+</span>
+</a></li><li class="separate-item"><a data-placement="right" href="/im-component/im-appfac-config-gradle/edit" title="Settings"><i class="fa fa-cogs fa-fw"></i>
+<span>
+Settings
+</span>
+</a></li></ul>
+
+<div class='collapse-nav'>
+<a class="toggle-nav-collapse" href="#" title="Open/Close"><i class="fa fa-angle-left"></i></a>
+
+</div>
+<a class="sidebar-user" href="/u/200904"><img alt="User activity" class="avatar avatar s32" src="/assets/no_avatar-0b64d25ac5f63e6f0caee99e819105ba.png" />
+<div class='username'>
+200904
+</div>
+</a></div>
+<div class='content-wrapper'>
+<div class='container-fluid'>
+<div class='content'>
+<div class='flash-container'>
+</div>
+
+<div class='clearfix'>
+
+<div class='tree-ref-holder'>
+<form accept-charset="UTF-8" action="/im-component/im-appfac-config-gradle/refs/switch" class="project-refs-form" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<select class="project-refs-select select2 select2-sm" id="ref" name="ref"><optgroup label="Branches"><option selected="selected" value="master">master</option></optgroup><optgroup label="Tags"></optgroup></select>
+<input id="destination" name="destination" type="hidden" value="blob" />
+<input id="path" name="path" type="hidden" value="config_analyze.gradle" />
+</form>
+
+
+</div>
+<div class='tree-holder' id='tree-holder'>
+<ul class='breadcrumb repo-breadcrumb'>
+<li>
+<i class='fa fa-angle-right'></i>
+<a href="/im-component/im-appfac-config-gradle/tree/master">im-appfac-config-gradle
+</a></li>
+<li>
+<a href="/im-component/im-appfac-config-gradle/blob/master/config_analyze.gradle"><strong>
+config_analyze.gradle
+</strong>
+</a></li>
+</ul>
+<ul class='blob-commit-info well hidden-xs'>
+<li class='commit js-toggle-container'>
+<div class='commit-row-title'>
+<strong class='str-truncated'>
+<a class="commit-row-message" href="/im-component/im-appfac-config-gradle/commit/a004aed32ad49838f552279b96e14ffce3edae0b">&#x4FEE;&#x6539;&#x597D;&#x53CB;&#x4F9D;&#x8D56;&#x7248;&#x672C;</a>
+</strong>
+<div class='pull-right'>
+<a class="commit_short_id" href="/im-component/im-appfac-config-gradle/commit/a004aed32ad49838f552279b96e14ffce3edae0b">a004aed3</a>
+</div>
+<div class='notes_count'>
+</div>
+</div>
+<div class='commit-row-info'>
+<a class="commit-author-link has_tooltip" data-original-title="200904@nd.com" href="/u/200904"><img alt="" class="avatar s24" src="/assets/no_avatar-0b64d25ac5f63e6f0caee99e819105ba.png" width="24" /> <span class="commit-author-name">yanyy</span></a>
+authored
+<div class='committed_ago'>
+<time class="time_ago js-timeago" data-placement="top" data-toggle="tooltip" datetime="2016-06-06T10:25:12Z" title="Jun 06, 2016 10:25am">2016-06-06 10:25:12 +0000</time> &nbsp;
+</div>
+<a class="pull-right" href="/im-component/im-appfac-config-gradle/tree/a004aed32ad49838f552279b96e14ffce3edae0b">Browse Code »</a>
+</div>
+</li>
+
+</ul>
+<div class='tree-content-holder' id='tree-content-holder'>
+<article class='file-holder'>
+<div class='file-title'>
+<i class="fa fa-file-text-o fa-fw"></i>
+<strong>
+config_analyze.gradle
+</strong>
+<small>
+1.03 KB
+</small>
+<div class='file-actions hidden-xs'>
+<div class='btn-group tree-btn-group'>
+<a class="btn btn-small" href="/im-component/im-appfac-config-gradle/edit/master/config_analyze.gradle">Edit</a>
+<a class="btn btn-sm" href="/im-component/im-appfac-config-gradle/raw/master/config_analyze.gradle" target="_blank">Raw</a>
+<a class="btn btn-sm" href="/im-component/im-appfac-config-gradle/blame/master/config_analyze.gradle">Blame</a>
+<a class="btn btn-sm" href="/im-component/im-appfac-config-gradle/commits/master/config_analyze.gradle">History</a>
+<a class="btn btn-sm" href="/im-component/im-appfac-config-gradle/blob/a004aed32ad49838f552279b96e14ffce3edae0b/config_analyze.gradle">Permalink</a>
+</div>
+<button class="remove-blob btn btn-sm btn-remove" data-target="#modal-remove-blob" data-toggle="modal" name="button" type="submit">Remove
+</button>
+</div>
+</div>
+<div class='file-content code'>
+<div class='code file-content white'>
+<div class='line-numbers'>
+<a data-line-number='1' href='#L1' id='L1'>
+<i class='fa fa-link'></i>
+1
+</a>
+<a data-line-number='2' href='#L2' id='L2'>
+<i class='fa fa-link'></i>
+2
+</a>
+<a data-line-number='3' href='#L3' id='L3'>
+<i class='fa fa-link'></i>
+3
+</a>
+<a data-line-number='4' href='#L4' id='L4'>
+<i class='fa fa-link'></i>
+4
+</a>
+<a data-line-number='5' href='#L5' id='L5'>
+<i class='fa fa-link'></i>
+5
+</a>
+<a data-line-number='6' href='#L6' id='L6'>
+<i class='fa fa-link'></i>
+6
+</a>
+<a data-line-number='7' href='#L7' id='L7'>
+<i class='fa fa-link'></i>
+7
+</a>
+<a data-line-number='8' href='#L8' id='L8'>
+<i class='fa fa-link'></i>
+8
+</a>
+<a data-line-number='9' href='#L9' id='L9'>
+<i class='fa fa-link'></i>
+9
+</a>
+<a data-line-number='10' href='#L10' id='L10'>
+<i class='fa fa-link'></i>
+10
+</a>
+<a data-line-number='11' href='#L11' id='L11'>
+<i class='fa fa-link'></i>
+11
+</a>
+<a data-line-number='12' href='#L12' id='L12'>
+<i class='fa fa-link'></i>
+12
+</a>
+<a data-line-number='13' href='#L13' id='L13'>
+<i class='fa fa-link'></i>
+13
+</a>
+<a data-line-number='14' href='#L14' id='L14'>
+<i class='fa fa-link'></i>
+14
+</a>
+<a data-line-number='15' href='#L15' id='L15'>
+<i class='fa fa-link'></i>
+15
+</a>
+<a data-line-number='16' href='#L16' id='L16'>
+<i class='fa fa-link'></i>
+16
+</a>
+<a data-line-number='17' href='#L17' id='L17'>
+<i class='fa fa-link'></i>
+17
+</a>
+<a data-line-number='18' href='#L18' id='L18'>
+<i class='fa fa-link'></i>
+18
+</a>
+<a data-line-number='19' href='#L19' id='L19'>
+<i class='fa fa-link'></i>
+19
+</a>
+<a data-line-number='20' href='#L20' id='L20'>
+<i class='fa fa-link'></i>
+20
+</a>
+<a data-line-number='21' href='#L21' id='L21'>
+<i class='fa fa-link'></i>
+21
+</a>
+<a data-line-number='22' href='#L22' id='L22'>
+<i class='fa fa-link'></i>
+22
+</a>
+<a data-line-number='23' href='#L23' id='L23'>
+<i class='fa fa-link'></i>
+23
+</a>
+<a data-line-number='24' href='#L24' id='L24'>
+<i class='fa fa-link'></i>
+24
+</a>
+<a data-line-number='25' href='#L25' id='L25'>
+<i class='fa fa-link'></i>
+25
+</a>
+<a data-line-number='26' href='#L26' id='L26'>
+<i class='fa fa-link'></i>
+26
+</a>
+<a data-line-number='27' href='#L27' id='L27'>
+<i class='fa fa-link'></i>
+27
+</a>
+<a data-line-number='28' href='#L28' id='L28'>
+<i class='fa fa-link'></i>
+28
+</a>
+<a data-line-number='29' href='#L29' id='L29'>
+<i class='fa fa-link'></i>
+29
+</a>
+<a data-line-number='30' href='#L30' id='L30'>
+<i class='fa fa-link'></i>
+30
+</a>
+</div>
+<pre class="code highlight"><code><span id="LC1" class="line">import groovy.json.JsonSlurper</span>&#x000A;<span id="LC2" class="line"></span>&#x000A;<span id="LC3" class="line">def im_friend_display_follow = true;</span>&#x000A;<span id="LC4" class="line"></span>&#x000A;<span id="LC5" class="line">def inputFile = new File(new File(&quot;app&quot;).absolutePath, &quot;assets/app_factory/zh-CN/components/build.json&quot;)</span>&#x000A;<span id="LC6" class="line">if(!inputFile.exists()){</span>&#x000A;<span id="LC7" class="line">    inputFile = new File(new File(&quot;app&quot;).absolutePath, &quot;assets/app_factory/en/components/build.json&quot;)</span>&#x000A;<span id="LC8" class="line">}</span>&#x000A;<span id="LC9" class="line">if(!inputFile.exists()){</span>&#x000A;<span id="LC10" class="line">    inputFile = new File(new File(&quot;app/src/main&quot;).absolutePath, &quot;assets/app_factory/en/components/build.json&quot;)</span>&#x000A;<span id="LC11" class="line">}</span>&#x000A;<span id="LC12" class="line">if(!inputFile.exists()){</span>&#x000A;<span id="LC13" class="line">    inputFile = new File(new File(&quot;app/src/main&quot;).absolutePath, &quot;assets/app_factory/zh-CN/components/build.json&quot;)</span>&#x000A;<span id="LC14" class="line">}</span>&#x000A;<span id="LC15" class="line">def list = new JsonSlurper().parse(inputFile)</span>&#x000A;<span id="LC16" class="line">list.each {</span>&#x000A;<span id="LC17" class="line">    if (it.component.namespace == &#39;com.nd.social&#39;</span>&#x000A;<span id="LC18" class="line">            &amp;&amp; it.component.name == &#39;im&#39;) {</span>&#x000A;<span id="LC19" class="line">        im_friend_display_follow = it.properties.im_friend_display_follow</span>&#x000A;<span id="LC20" class="line">    }</span>&#x000A;<span id="LC21" class="line">}</span>&#x000A;<span id="LC22" class="line"></span>&#x000A;<span id="LC23" class="line">dependencies {</span>&#x000A;<span id="LC24" class="line">    if (im_friend_display_follow != &quot;true&quot;) {</span>&#x000A;<span id="LC25" class="line">        compile(&#39;com.nd.sdp.android:im-friend-res:0.0.3&#39;)</span>&#x000A;<span id="LC26" class="line">        configurations {</span>&#x000A;<span id="LC27" class="line">            all*.exclude group: &#39;com.nd.sdp.android&#39; , module: &#39;im-follow-res&#39;</span>&#x000A;<span id="LC28" class="line">		}</span>&#x000A;<span id="LC29" class="line">    }</span>&#x000A;<span id="LC30" class="line">}</span></code></pre>&#x000A;
+</div>
+
+</div>
+
+</article>
+</div>
+
+</div>
+<div class='modal' id='modal-remove-blob'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='modal-header'>
+<a class='close' data-dismiss='modal' href='#'>×</a>
+<h3 class='page-title'>Remove config_analyze.gradle</h3>
+<p class='light'>
+From branch
+<strong>master</strong>
+</p>
+</div>
+<div class='modal-body'>
+<form accept-charset="UTF-8" action="/im-component/im-appfac-config-gradle/blob/master/config_analyze.gradle" class="form-horizontal js-requires-input" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="delete" /><input name="authenticity_token" type="hidden" value="Jc3gEWidAFAecdG/QrqCJ8B+w1I6Bdy5z+wpzNDO9WA=" /></div>
+<div class='form-group commit_message-group'>
+<label class="control-label" for="commit_message">Commit message
+</label><div class='col-sm-10'>
+<div class='commit-message-container'>
+<div class='max-width-marker'></div>
+<textarea class="form-control" id="commit_message" name="commit_message" placeholder="Removed this file because..." required="required" rows="3">
+</textarea>
+</div>
+</div>
+</div>
+
+<div class='form-group'>
+<div class='col-sm-offset-2 col-sm-10'>
+<button class="btn btn-remove btn-remove-file" name="button" type="submit">Remove file</button>
+<a class="btn btn-cancel" data-dismiss="modal" href="#">Cancel</a>
+</div>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+  GitLab.GfmAutoComplete.dataSource = "/im-component/im-appfac-config-gradle/autocomplete_sources?type=NilClass&type_id=master%2Fconfig_analyze.gradle"
+  GitLab.GfmAutoComplete.setup();
+</script>
+
+
+</body>
+</html>
+
